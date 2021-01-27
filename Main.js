@@ -41,7 +41,6 @@ console.log(form);
   
   fetch(api).then((Response)=>{
     return Response.json()
-    
   })
   
   .then(data=>{
