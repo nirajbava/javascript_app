@@ -6,6 +6,17 @@ let whename = document.getElementById("whename")
 let query = document.getElementById("search")
 let inte = document.getElementById("inte")
 
+
+
+query.addEventListener('click', (e)=> {
+
+  e.preventDefault();
+  getweather(inte.value);
+  inte.value='';
+
+});
+
+
 function formatAMPM(date) {
   var hours = date.getHours();
   var minutes = date.getMinutes();
